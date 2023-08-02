@@ -1,0 +1,32 @@
+html {
+  scroll-snap-type: y proximity;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+ul[attr="vert"] {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  height: 100%; /* Full height */
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto;
+  /* Enable scrolling if the sidenav has too much content */
+}
+
+ul[attr="vert"] li{ /*may need to fix*/
+  display: block;
+}
+
+ul[attr="horiz"] {
+  list-style-type: none;
+}
+
+ul[attr="horiz"] li {
+  display: inline-block;
+  text-align: center;
+}
